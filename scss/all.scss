@@ -3,4 +3,40 @@
 @import 'reset';
 @import 'common';
 
-body {font-family: DXTypeB;}
+body {font-family: DXTypeB; font-size: 1.8rem;}
+
+.container {
+    width: 50rem;
+    margin: 10rem auto 0;
+    text-align: center;
+    h1 {
+        font-size: 3.6rem;
+    }
+    .introText {
+        margin: 4.8rem 0 2.4rem;
+        p {
+            line-height: 3.6rem;            
+        }
+    }
+    .inputWrap {
+        #userInput {
+            margin-right: 1rem;
+            border: none;
+            border-bottom: .1rem solid #ccc;
+        }
+    }
+    .listItems {
+        margin-top: 3.6rem;
+        padding: 0 4.8rem;
+        text-align: left;
+        li:not(:last-child) {
+            margin-bottom: 1.8rem;
+        }
+        li {
+            cursor: pointer;
+            &.done{
+                text-decoration: line-through;
+            }
+        }        
+    }
+}
