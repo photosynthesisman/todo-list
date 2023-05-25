@@ -121,13 +121,13 @@ function makeTodoList() {
     enterButtons.forEach(function (enterButton, index) {
         let currentInput = inputs[index];
         let currentUl = uls[index];
-    
+        
         enterButton.addEventListener("click", function () {
-            addListAfterClick(currentInput, currentUl);
+            addListAfterClick(currentInput, currentUl);                       
         });
 
         currentInput.addEventListener("keypress", function (event) {
-            addListAfterKeypress(event, currentInput, currentUl);
+            addListAfterKeypress(event, currentInput, currentUl);            
         });
     });
 }

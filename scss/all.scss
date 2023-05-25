@@ -27,35 +27,51 @@ body {font-family: DXTypeB; font-size: 1.8rem;}
         display: flex;
         justify-content: center;
         align-items: center;
-        #userInput {
+        padding-left: 2rem;
+        .userInput {
+            width: 100%;
             margin-right: 1rem;
             border: none;
             border-bottom: .1rem solid #ccc;
         }
     }
-    .listItems {
-        margin-top: 3.6rem;
-        padding: 0 4.8rem;
-        text-align: left;
-        li:not(:last-child) {
-            margin-bottom: 1.8rem;
-        }
-        li {
-            display: flex;
-            align-items: center;
-            width: max-content;
-            cursor: pointer;
-            &.done{
-                text-decoration: line-through rgba(0,0,0,.5) .5rem;                
-            }
-            button {
-                margin-left: 1rem;
-            }
-        }        
-    }
     table{
         caption{
             visibility: hidden;
+        }
+        tbody:before {
+            content: "-";
+            display: block;
+            line-height: 2.4rem;
+            color: transparent;
+        }      
+        th {
+            width: 10rem;
+        }
+        td {
+            width: 100%;
+        }
+        .listItems {         
+            margin: 1.6rem 0 3.2rem;     
+            padding: 0 1.6rem;          
+            text-align: left;
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 2rem;
+            }            
+            li {
+                display: flex;
+                align-items: center;
+                width: max-content;
+                cursor: pointer;
+                &.done{
+                    text-decoration: line-through rgba(0,0,0,.5) .5rem;                
+                }
+                button {
+                    margin-left: 1rem;
+                }
+            }        
         }
     };
 }
