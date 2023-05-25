@@ -1,11 +1,16 @@
-@charset "utf-8";
-// import
 @import 'reset';
 @import 'common';
 
 body {font-family: DXTypeB; font-size: 1.8rem;}
 
 .container {
+    button {
+        padding: .5rem;
+        border: none;       
+        span {
+            vertical-align: middle;
+        } 
+    }
     width: 50rem;
     margin: 10rem auto 0;
     text-align: center;
@@ -19,6 +24,9 @@ body {font-family: DXTypeB; font-size: 1.8rem;}
         }
     }
     .inputWrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         #userInput {
             margin-right: 1rem;
             border: none;
@@ -33,9 +41,14 @@ body {font-family: DXTypeB; font-size: 1.8rem;}
             margin-bottom: 1.8rem;
         }
         li {
+            display: flex;
+            align-items: center;
             cursor: pointer;
             &.done{
-                text-decoration: line-through;
+                text-decoration: line-through rgba(0,0,0,.5) .5rem;                
+            }
+            button {
+                margin-left: 1rem;
             }
         }        
     }
