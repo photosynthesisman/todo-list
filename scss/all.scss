@@ -43,6 +43,7 @@ body {font-family: DXTypeB; font-size: 1.8rem;}
         li {
             display: flex;
             align-items: center;
+            width: max-content;
             cursor: pointer;
             &.done{
                 text-decoration: line-through rgba(0,0,0,.5) .5rem;                
@@ -52,4 +53,9 @@ body {font-family: DXTypeB; font-size: 1.8rem;}
             }
         }        
     }
+    table{
+        caption{
+            visibility: hidden;
+        }
+    };
 }
